@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+    <head>
+<title>O nama</title>
+<meta name="autor" content="Karlo Kurtanjek">
+<meta name="opis" content="Ovo je stranica o dokumentaciji">
+<meta name="kljucne_rijeci" content="dokumentacija,liste, stranica">
+<link rel="stylesheet" type="text/css" href="../css/kkurtanje21.css">
+<link rel="stylesheet" type="text/css" href="../css/kkurtanje21_responzivni_dizajn.css">
+<meta charset="UTF-8">
+    </head>
+
+        <body>
+            <header>
+                O nama <br>
+                <a href="index.html"><img src="../dokumenti/slike/logo.png" alt="Logo hotela" width="100"></a>
+            </header>
+            <div id="izbornik">Izbornik</div>
+            <nav>
+                 <a href="index.html">Početna stranica</a>
+                 <a href="../autor.html">Autor</a>
+                <a href="../dokumentacija.html">Dokumentacija</a>
+                <a href="hotel.html">Hotel</a>
+                <a href="cjenik.html">Cjenik</a>
+                <a href="onama.html" class="sad">O nama</a>
+                <a href="/dinamicna">Dinamički cjenik</a>
+                <a href="/api/rezervacije">REST servis</a>
+
+            </nav>
+            <h1>Povijest hotela</h1>
+            <p>Hotel je bio središte društvenog života Zagreba naročito u 1920-ih godina, kada je privlačio ljubavne parove. Prema legendi je
+            ondje održan prvi hrvatski striptiz na oproštajnoj zabavi jednog talijanskog grofa. U hotelu je u to doba također djelovao kasino
+            koji je postao poznat radi nekoliko incidenata vezanih za prostituciju, nakon čega je kasino zatvoren. Tijekom Drugog svjetskog rata,
+            hotel je bio okupljalište njemačkih časnika, te je ondje formirano svojevrsno sjedište Gestapa u Zagrebu. Nijemci su ondje organizirali mnogobrojne zabave. </p>
+
+            <h2>Izgradnja hotela</h2>
+            <p>Izgradnja hotela završena je za samo 26 mjeseci. Svečanom je otvaranju održanom 22. travnja 1925. godine prisustvovalo preko 200 gostiju.
+            Među uzvanicima bio je gradonačelnik Zagreba Vjekoslav Heinzel, konzuli, bankari, novinari, te brojni drugi. Otvoranje je bilo popraćeno i u novinskom tisku. Hotel od tada do danas ima važnu ulogu u razvoju zagrebačkog turizma. </p>
+            <div id="slika">
+                <img src="../dokumenti/slike/interaktivna.png" id="interaktivna" alt="Interaktivna slika" width="500" height="400" usemap="#mapa">
+            <map name="mapa">
+                <area alt="drvo" coords="0,100,50,300,0,300" href="https://hr.wikipedia.org/wiki/Hrvatske_%C5%A1ume" shape="poly">
+                <area alt="krov" coords="150,120,350,220" href="https://hr.wikipedia.org/wiki/Hotel_Esplanade" shape="rect">
+                <area alt="fontana" coords="250,450,125" href="https://hr.wikipedia.org/wiki/Fontana" shape="circle">
+            </map>
+            <p>
+                Ova slika ima 3 interaktivna područja:
+            </p>
+                <ul>
+                   <li>1. Krov hotela</li>
+                   <li> 2. Fontana</li>
+                   <li>3. Drveće u lijevom kutu na koordinatama: 0,100,50,300,0,300</li>
+                </ul>
+            </div>
+            <h2 id="tekst">Lokacija</h2>
+                           <iframe id="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.2939702390595!2d15.973800315532193!3d45.805370679106545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6f9c2ec83fb%3A0x5e3dc3ef92e0d812!2sEsplanade%20Zagreb!5e0!3m2!1shr!2shr!4v1679426974006!5m2!1shr!2shr" 
+            width="600" height="450" title="Lokacija"></iframe>
+            <p>Esplanade Zagreb Hotel, smješten u samom centru ovog povijesnog grada, ikona je art decoa i cijenjena u cijeloj regiji po svojim besprijekornim standardima usluge. Hotel je okružen prekrasnim povijesnim građevinama,
+            zelenim parkom s fontanom, željezničkim kolodvorom, podzemnim shopping centrom, fitness parkom i raskošnim botaničkim vrtom.</p>
+
+            <h2>Obrazac za kontakt</h2>
+            <form id="formaKontakt" method="POST" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" novalidate>
+                <div id="kontakt">
+                  <input type="text" id="predmet" name="predmet" placeholder="Predmet upita" maxlength="30" >
+                </div>
+                <div>
+                    <div id="radio">
+                  <p>Vrsta upita:</p>
+                  <input type="radio" name="upit" value="1" id="opci">
+                  <label for="opci">Opći upit</label>
+                  <input type="radio" name="upit" value="2" id="rezervacije" >
+                  <label for="rezervacije">Upit o rezervacijama</label>
+                  <input type="radio" name="upit" value="3" id="dodatna_pitanja" >
+                  <label for="dodatna_pitanja">Dodatna pitanja</label>
+                  <input type="radio" name="upit" value="4" id="ostalo">
+                  <label for="ostalo">Ostalo</label>
+                </div>
+                </div>
+                <div>
+                  <textarea id="poruka" name="poruka" rows="10" cols="40" maxlength="1000" placeholder="Unesite poruku"></textarea>
+                </div>
+                <button id="posalji" type="submit">Pošalji</button>
+              </form>
+              <p>Ovdje možete napraviti rezervaciju sobe</p>
+              <div id="rezervacija">
+                <form id="forma1" method="post" action="/api/rezervacije" novalidate>
+                    <fieldset id="osobniPodaci">
+                    <legend>Osobni podaci</legend>
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime" name="ime"><br>
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime" name="prezime"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="broj">Kontakt broj:</label>
+                    <input type="tel" id="broj" name="broj"><br>
+                    <label for="br_osoba">Broj osoba:</label>
+                    <input type="number" id="br_osoba" name="br_osoba" value="1" min="1">
+
+                </fieldset>
+                <fieldset id="soba">
+                    <legend>Odabir rezervacije</legend>
+                    <label for="vrsta_sobe">Vrsta sobe:</label>
+                    <select id="vrsta_sobe" name="vrsta_sobe" >
+                        <option value="">Odaberite vrstu sobe</option>
+                        <option value="jednokrevetna">Jednokrevetna</option>
+                        <option value="dvokrevetna">Dvokrevetna</option>
+                        <option value="trokrevetna">Trokrevetna</option>
+                        <option value="cetverokrevetna">Četverokrevetna</option>
+                        <option value="spavaonica">Spavaonica</option>
+                        <option value="lezaj">Pomoćni ležaj</option>
+                        <option value="jednokrevetna_dijete">Jednokrevetna + dijete</option>
+                      </select>
+
+                    <label for="prijava">Datum prijave:</label>
+                    <input type="date" id="prijava" name="prijava" >
+                    <br>
+                    <label for="odjava">Datum odjave:</label>
+                    <input type="date" id="odjava" name="odjava"  >
+                    <br>
+                    <label for="vrijeme">Vrijeme prijave:</label>
+                    <input type="time" id="vrijeme" name="vrijeme">
+                    <br>
+                      <br>
+                      <button id="gumbRezerviraj" type="submit">Rezerviraj</button>
+                      <button type="reset">Osvježi</button>
+                    </fieldset>
+                </form>
+            </div>
+            <footer>
+
+            <a href="https://creativecommons.org/licenses/"><img src="../dokumenti/slike/licenca.png" alt="Licenca" width="50"></a>
+            &copy; , 2023 Karlo Kurtanjek
+            <a href="https://validator.w3.org/check?uri=http://spider.foi.hr/OWT/2023/zadaca_02/kkurtanje21/ostalo/onama.html"><img src="../dokumenti/slike/html5.png" alt="Licenca" width="50"></a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://spider.foi.hr/OWT/2023/zadaca_02/kkurtanje21/css/kkurtanje21.css"><img src="../dokumenti/slike/css.png" alt="CSS licenca" width="50"></a>
+        </footer>
+           <script src="../jsk/kkurtanje21.js"></script>
+        </body>
+
+
+
+</html>

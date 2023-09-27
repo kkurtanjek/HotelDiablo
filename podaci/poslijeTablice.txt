@@ -1,0 +1,12 @@
+<div id="informacijeTablice"><div></div></div>
+  <footer id="pod">
+                <a href="https://creativecommons.org/licenses/"><img src="../dokumenti/slike/licenca.png" alt="Licenca" width="50"></a>
+                &copy; , 2023 Karlo Kurtanjek
+                <a href="https://validator.w3.org/check?uri=http://spider.foi.hr/OWT/2023/zadaca_02/kkurtanje21/ostalo/cjenik.html"><img src="../dokumenti/slike/html5.png" alt="Licenca" width="50"></a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://spider.foi.hr/OWT/2023/zadaca_02/kkurtanje21/css/kkurtanje21.css"><img src="../dokumenti/slike/css.png" alt="CSS licenca" width="50"></a>
+            </footer>
+               <script src="../jsk/kkurtanje21.js"></script>
+        </body>
+
+
+</html>

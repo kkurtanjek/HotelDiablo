@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+    <head>
+        <meta name="autor" content="Karlo Kurtanjek">
+        <meta name="opis" content="Ovo je  početna stranica">
+        <meta name="kljucne_rijeci" content="Cjenik,obrazac kontakt, ponuda hotela,usluge">
+        <link rel="stylesheet" type="text/css" href="../css/kkurtanje21.css">
+        <link rel="stylesheet" type="text/css" href="../css/kkurtanje21_responzivni_dizajn.css">
+<title>Ponude</title>
+<meta charset="UTF-8">
+    </head>
+
+        <body>
+            <header>
+                Ponude hotela <br>
+                <a href="index.html"><img src="../dokumenti/slike/logo.png " id="logo" alt="Logo hotela" width="100"></a>
+            </header>
+            <div id="izbornik">Izbornik</div>
+            <nav>
+                <a href="index.html">Početna stranica</a>
+                <a href="../autor.html">Autor</a>
+                <a href="../dokumentacija.html">Dokumentacija</a>
+                <a href="hotel.html">Hotel</a>
+                <a href="onama.html">O nama</a>
+                <a href="cjenik.html" class="sad">Cjenik</a>
+
+            </nav>
+            <h1>Ponuda hotela</h1>
+            <p>U nastavku slijedi ponuda našeg hotela u obliku tablice:</p>

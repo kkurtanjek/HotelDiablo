@@ -1,0 +1,153 @@
+/* Mali ekran */
+@media only screen and (max-width: 480px){
+
+#karta{
+  width: auto;
+}
+  nav{
+    width: 100%;
+    display: none;
+  }
+
+  #izbornik{
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+  }
+#izbornik:hover + nav,
+nav:hover {
+  display: block;
+}
+      .red {
+        display: block;
+        }
+       
+        figure figcaption {
+        text-align: center;
+        }
+      #video{
+        max-width: 100%;
+        height: auto;
+    
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    
+
+      fieldset{
+        width: 90%;
+      }
+      iframe{
+        width: auto;
+      }
+      .cjenik th:not(:first-child),
+      .cjenik td:not(:first-child){
+        display: none;
+      }
+      body{
+        overflow-x: hidden;
+      }
+      label {
+        display:block;
+        flex-direction: column;
+      }
+      
+      input {
+        margin-top: 2%;
+      }
+      .cjenik{
+        width: 100%;
+        table-layout: fixed;
+      }
+      .cjenik td, .cjenik th {
+        word-wrap: break-word;
+      }
+#s1,
+#s2,
+#s3,
+#s4,
+#s5,
+#s6{
+   width: 100%;
+ }
+
+
+}
+
+      
+/* Srednji ekran */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  #izbornik{
+    display: none;
+  }
+
+  body{
+    overflow-x: hidden;
+  background-color: brown;
+  color: white;
+}
+.bg-b{
+  background-color: brown;
+ }
+
+ .red {
+  display: block;
+  }
+ 
+  figure figcaption {
+  text-align: center;
+  margin-right: 100%;
+
+  }
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover,
+  #s5:hover,
+  #s6:hover {
+     width: 400px;
+     height: 250px;
+   }
+  
+}
+
+
+
+/* Veliki ekran */
+@media only screen and (min-width: 1025px){
+  #izbornik{
+    display: none;
+  }
+ 
+  #osobniPodaci {
+
+    float: left;
+    width: 50%;
+    height: 50%;
+    }
+    
+    #soba {
+      float: right;
+      width: 45%;
+      height: 50%;
+    }
+    #pod{
+     width: 100%;
+    }
+    #s1:hover,
+#s2:hover,
+#s3:hover,
+#s4:hover,
+#s5:hover,
+#s6:hover {
+   width: 400px;
+   height: 250px;
+ }
+
+
+}

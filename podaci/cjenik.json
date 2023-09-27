@@ -1,0 +1,62 @@
+[
+  {
+    "vrstaSobe": "Jednokrevetna soba",
+    "slobodniTermin": "20.6-31.9",
+    "nocenjeDorucak": "30 €",
+    "cijenaNocenja": "25 €"
+  },
+  {
+    "vrstaSobe": "Dvokrevetna soba",
+    "slobodniTermin": "15.6-20.7",
+    "nocenjeDorucak": "45 €",
+    "cijenaNocenja": "40 €"
+  },
+  {
+    "vrstaSobe": "Trokrevetna soba",
+    "slobodniTermin": "",
+    "nocenjeDorucak": "60 €",
+    "cijenaNocenja": "55 €"
+  },
+  {
+    "vrstaSobe": "Četverokrevetna soba",
+    "slobodniTermin": "15.7-20.8",
+    "nocenjeDorucak": "70 €",
+    "cijenaNocenja": "65 €"
+  },
+  {
+    "vrstaSobe": "Spavaonica",
+    "slobodniTermin": "1.8-11.8",
+    "nocenjeDorucak": "65 €",
+    "cijenaNocenja": "65 €"
+  },
+  {
+    "vrstaSobe": "Pomoćni ležaj",
+    "slobodniTermin": "25.8-30.8",
+    "nocenjeDorucak": "13 €",
+    "cijenaNocenja": "8 €"
+  },
+  {
+    "vrstaSobe": "Jednokrevetna soba + dijete",
+    "slobodniTermin": "25.7-31.8",
+    "nocenjeDorucak": "50 €",
+    "cijenaNocenja": "45 €"
+  },
+  {
+    "vrstaSobe": "Luksuzna dvokrevetna soba",
+    "slobodniTermin": "1.7-15.7",
+    "nocenjeDorucak": "90 €",
+    "cijenaNocenja": "85 €"
+  },
+  {
+    "vrstaSobe": "Obiteljska soba",
+    "slobodniTermin": "10.8-20.8",
+    "nocenjeDorucak": "100 €",
+    "cijenaNocenja": "95 €"
+  },
+  {
+    "vrstaSobe": "Suite apartman",
+    "slobodniTermin": "1.6-30.9",
+    "nocenjeDorucak": "150 €",
+    "cijenaNocenja": "140 €"
+  }
+]
